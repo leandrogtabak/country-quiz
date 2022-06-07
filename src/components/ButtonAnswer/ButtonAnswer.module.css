@@ -1,0 +1,108 @@
+.button {
+    border: none;
+    background-color: transparent;
+
+
+    width: 400px;
+    padding: 0;
+
+}
+
+
+.container {
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 400px;
+
+    padding: 10px 0;
+
+    background-color: white;
+    border-radius: 12px;
+
+    color: var(--text-button-primary);
+
+    border: 2px solid rgba(96, 102, 208, 0.7);
+
+    transition: all 0.12s ease-in-out;
+}
+
+.container:hover {
+
+    background-color: #F9A826;
+    color: white;
+
+    border: 2px solid #F9A826;
+    cursor: pointer;
+
+}
+
+.letter {
+    padding: 0;
+    margin: 0;
+    margin-right: 45px;
+    margin-left: 20px;
+
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 24px;
+
+}
+
+.label {
+    padding: 0;
+    margin: 0;
+
+    font-weight: 500;
+    font-size: 18px;
+    text-align: left;
+
+}
+
+.wrong {
+
+    background-color: #EA8282;
+    color: white;
+    border: 2px solid #EA8282;
+    cursor: auto;
+
+
+
+}
+
+.wrong:hover {
+
+    background-color: #EA8282;
+    color: white;
+    border: 2px solid #EA8282;
+
+    cursor: auto;
+
+}
+
+.correct {
+
+    background-color: #60BF88;
+    color: white;
+    border: 2px solid #60BF88;
+    cursor: auto;
+
+
+}
+
+.correct:hover {
+
+    background-color: #60BF88;
+    color: white;
+    border: 2px solid #60BF88;
+    cursor: auto;
+
+}
+
+.icon {
+    font-size: 24px;
+    margin-right: 14px;
+    margin-left: auto;
+
+}

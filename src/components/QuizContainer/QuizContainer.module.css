@@ -1,0 +1,167 @@
+.container {
+
+    background-color: white;
+    padding: 68px 32px;
+    padding-bottom: 32px;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+
+    border-radius: 24px;
+
+    min-width: 464px;
+
+}
+
+.options {
+    display: grid;
+    grid-template-rows: auto;
+    row-gap: 25px;
+}
+
+.question {
+
+    font-weight: 700;
+    font-size: 24px;
+    margin-right: auto;
+
+    color: #2F527B;
+
+
+    max-width: 400px;
+    white-space: normal;
+
+}
+
+.title {
+    position: absolute;
+    top: -90px;
+    left: 0;
+
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 36px;
+
+    color: #F2F2F2;
+}
+
+.imageQuiz {
+    width: 162px;
+    position: absolute;
+    top: -75px;
+    right: 0px;
+}
+
+.imageWinners {
+    width: 238px;
+}
+
+.next {
+
+    padding: 14px 36px;
+
+    margin-top: 24px;
+
+    width: fit-content;
+    margin-left: auto;
+
+    background-color: #F9A826;
+    color: white;
+
+    box-shadow: 0px 2px 4px rgba(252, 168, 47, 0.4);
+
+    border-radius: 12px;
+    border: none;
+
+    font-weight: 700;
+    font-size: 18px;
+
+    cursor: pointer;
+
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out
+}
+
+.next:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow: 0px 6px 4px rgba(252, 168, 47, 0.4);
+
+
+}
+
+.tryAgain {
+
+    background-color: white;
+
+    border: 2px solid var(--text-color-primary);
+    border-radius: 12px;
+
+    font-weight: 600;
+    font-size: 18px;
+
+    width: fit-content;
+
+    color: var(--text-color-primary);
+
+    padding: 18px 61px;
+
+    cursor: pointer;
+
+
+}
+
+.scorePhrase {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 72px;
+
+    font-weight: 400;
+    font-size: 18px;
+
+
+    color: var(--text-color-primary);
+}
+
+.score {
+    padding: 0;
+    margin: 0;
+
+    font-weight: 700;
+    font-size: 36px;
+
+
+    color: rgb(120, 207, 154);
+}
+
+.results {
+    padding: 0;
+    margin: 0;
+    margin-top: 62px;
+
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--text-color-primary);
+
+
+
+}
+
+.flag {
+    width: 84px;
+    margin-right: auto;
+
+}
+
+@media (max-width:560px) {
+
+    .container {
+
+        width: 100vw;
+        height: 100%;
+    }
+}
