@@ -1,9 +1,7 @@
 .button {
     border: none;
     background-color: transparent;
-
-
-    width: 400px;
+    width: 100%;
     padding: 0;
 
 }
@@ -14,7 +12,6 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    width: 400px;
 
     padding: 10px 0;
 
@@ -104,5 +101,38 @@
     font-size: 24px;
     margin-right: 14px;
     margin-left: auto;
+
+}
+
+@media (max-width:560px) {
+
+
+
+    .container {
+
+        padding: 5px 0;
+
+    }
+
+    .letter {
+
+        font-size: 18px;
+        margin-right: 24px;
+        margin-left: 16px;
+
+    }
+
+    .label {
+
+        font-size: 14px;
+
+    }
+
+    .icon {
+        font-size: 14px;
+
+
+
+    }
 
 }

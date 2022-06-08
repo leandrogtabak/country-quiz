@@ -105,41 +105,46 @@ const QuizContainer = ({ countries }) => {
     (!showResults && (
       <div className={styles.container}>
         <h1 className={styles.title}>country quiz</h1>
-        <img className={styles.imageQuiz} src='/undraw_adventure_4hum 1.svg' alt='' />
-        {numberQuestion === 1 && <img className={styles.flag} src={flag} alt='' />}
-        <p className={styles.question}>{questions[numberQuestion]}</p>
 
-        <div className={styles.options}>
-          {options.map((label, index) => {
-            return (
-              <ButtonAnswer
-                handleClick={clickable ? handleClick : undefined}
-                id={label}
-                index={index}
-                key={index}
-                letter={String.fromCharCode(65 + index)}
-                label={label}
-                variant={variant[index]}
-              />
-            );
-          })}
+        <div className={styles.panel}>
+          <img className={styles.imageQuiz} src='/undraw_adventure_4hum 1.svg' alt='' />
+          {numberQuestion === 1 && <img className={styles.flag} src={flag} alt='' />}
+          <p className={styles.question}>{questions[numberQuestion]}</p>
+
+          <div className={styles.options}>
+            {options.map((label, index) => {
+              return (
+                <ButtonAnswer
+                  handleClick={clickable ? handleClick : undefined}
+                  id={label}
+                  index={index}
+                  key={index}
+                  letter={String.fromCharCode(65 + index)}
+                  label={label}
+                  variant={variant[index]}
+                />
+              );
+            })}
+          </div>
+          <button className={styles.next} onClick={handleNext}>
+            Next
+          </button>
         </div>
-        <button className={styles.next} onClick={handleNext}>
-          Next
-        </button>
       </div>
     )) ||
     (showResults && (
       <div className={styles.container}>
         <h1 className={styles.title}>country quiz</h1>
-        <img className={styles.imageWinners} src='/undraw_winners_ao2o 2.svg' alt='' />
-        <p className={styles.results}>Results</p>
-        <p className={styles.scorePhrase}>
-          You got <span className={styles.score}>{counter}</span> correct answers
-        </p>
-        <button onClick={handleTryAgain} className={styles.tryAgain}>
-          Try again
-        </button>
+        <div className={styles.panel}>
+          <img className={styles.imageWinners} src='/undraw_winners_ao2o 2.svg' alt='' />
+          <p className={styles.results}>Results:</p>
+          <p className={styles.scorePhrase}>
+            You got <span className={styles.score}>{counter}</span> correct answers
+          </p>
+          <button onClick={handleTryAgain} className={styles.tryAgain}>
+            Try again
+          </button>
+        </div>
       </div>
     ))
   );
