@@ -126,9 +126,11 @@ const QuizContainer = ({ countries }) => {
               );
             })}
           </div>
-          <button className={styles.next} onClick={handleNext}>
-            Next
-          </button>
+          {!clickable && (
+            <button className={styles.next} onClick={handleNext}>
+              Next
+            </button>
+          )}
         </div>
       </div>
     )) ||
